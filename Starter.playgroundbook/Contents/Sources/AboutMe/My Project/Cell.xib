@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="24j-Zs-7Mx" customClass="CustomCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="304"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i7V-Uc-PkL">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="139"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7X-4D-vLv">
+                    <rect key="frame" x="16" y="259" width="30" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="n5W-tA-fve"/>
+                        <constraint firstAttribute="width" constant="30" id="yID-mV-X6h"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-du-wFQ">
+                    <rect key="frame" x="16" y="147" width="268" height="104"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="104" id="xit-ha-XLk"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</string>
+                    <color key="textColor" red="0.66660177707672119" green="0.66671353578567505" blue="0.66657799482345581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVe-Iq-b7o">
+                    <rect key="frame" x="264" y="259" width="20" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="HXe-ML-BGg"/>
+                        <constraint firstAttribute="height" constant="25" id="aPK-ug-abj"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oVe-Iq-b7o" firstAttribute="top" secondItem="NeY-du-wFQ" secondAttribute="bottom" constant="8" id="4TY-bd-lRd"/>
+                <constraint firstAttribute="bottom" secondItem="W7X-4D-vLv" secondAttribute="bottom" constant="20" id="8mY-Ft-osl"/>
+                <constraint firstItem="i7V-Uc-PkL" firstAttribute="leading" secondItem="24j-Zs-7Mx" secondAttribute="leading" id="DR2-6i-ijr"/>
+                <constraint firstAttribute="trailing" secondItem="i7V-Uc-PkL" secondAttribute="trailing" id="DoE-pS-XAa"/>
+                <constraint firstAttribute="trailing" secondItem="oVe-Iq-b7o" secondAttribute="trailing" constant="16" id="DsR-7p-gMp"/>
+                <constraint firstAttribute="trailing" secondItem="NeY-du-wFQ" secondAttribute="trailing" constant="16" id="MoI-Ok-bgt"/>
+                <constraint firstItem="W7X-4D-vLv" firstAttribute="leading" secondItem="24j-Zs-7Mx" secondAttribute="leading" constant="16" id="T5O-sL-PU3"/>
+                <constraint firstAttribute="bottom" secondItem="oVe-Iq-b7o" secondAttribute="bottom" constant="20" id="cB0-Yt-1go"/>
+                <constraint firstItem="NeY-du-wFQ" firstAttribute="leading" secondItem="24j-Zs-7Mx" secondAttribute="leading" constant="16" id="gOu-lY-FJP"/>
+                <constraint firstItem="i7V-Uc-PkL" firstAttribute="top" secondItem="24j-Zs-7Mx" secondAttribute="top" id="lRg-dM-HkJ"/>
+                <constraint firstItem="NeY-du-wFQ" firstAttribute="top" secondItem="i7V-Uc-PkL" secondAttribute="bottom" constant="8" id="zEP-TX-qo6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailButton" destination="oVe-Iq-b7o" id="Whs-jA-sOl"/>
+                <outlet property="imageView" destination="i7V-Uc-PkL" id="Eqy-1K-bVR"/>
+                <outlet property="loveButton" destination="W7X-4D-vLv" id="ZD3-3b-5u3"/>
+                <outlet property="textView" destination="NeY-du-wFQ" id="SWp-jm-KHh"/>
+            </connections>
+            <point key="canvasLocation" x="-62" y="94"/>
+        </view>
+    </objects>
+</document>
